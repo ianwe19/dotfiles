@@ -101,5 +101,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval $(thefuck --alias)
-eval $(thefuck --alias FUCK)
 alias config="/usr/bin/git --git-dir=/home/ian/.cfg-git/ --work-tree=/home/ian"
