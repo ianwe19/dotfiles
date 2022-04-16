@@ -1,7 +1,13 @@
-# T480 dotfiles
+dotfiles
 
 sway
+
 waybar
+
 rofi-lbonn-wayland
+
+ly display manager
+
 zsh
+
 oh-my-zsh
