@@ -16,23 +16,22 @@
     "position": "top",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
+    "height": 25,
 
     "modules-left": [
         "sway/workspaces",
         "sway/mode"
     ],
-    //"modules-center": [
-    //    "sway/window"
-    //],
+    "modules-center": [
+        "sway/window"
+    ],
     "modules-right": [
         "pulseaudio",
-        "backlight",
-        "temperature",
+        //"backlight",
+        //"temperature",
         "battery",
         "tray",
-        "clock#date",
-        "clock#time"
+        "clock#date"
     ],
 
 
@@ -47,9 +46,9 @@
             "critical": 15
         },
         // Connected to AC
-        "format": "  {icon}    {capacity}%", // Icon: bolt
+        "format": "{icon}  {capacity}%", // Icon: bolt
         // Not connected to AC
-        "format-discharging": "{icon}    {capacity}%",
+        "format-discharging": "{icon}  {capacity}%",
         "format-icons": [
             "", // Icon: battery-full
             "", // Icon: battery-three-quarters
@@ -61,8 +60,8 @@
     },
 
     "clock#time": {
-        "interval": 1,
-        "format": "  {:%I:%M %P}",
+        "interval": 5,
+        "format": "  {:%H:%M %P}",
         "tooltip": false
     },
 
@@ -74,7 +73,7 @@
 
     "clock#date": {
       "interval": 10,
-      "format": "  {:%e %b %Y}", // Icon: calendar-alt
+      "format": "  {: %b %e     %H:%M}", // Icon: calendar-alt
       "tooltip-format": "{:%e %B %Y}"
     },
 
@@ -141,19 +140,28 @@
 //    },
 
     "sway/workspaces": {
+      "active-only": false,
+      "current-only": false,
       "format": "{icon}",
       "on-click": "activate",
-      "all-outputs": false,
+      "all-outputs": true,
       "disable-scroll": true,
       "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        //"urgent": "",
+        //"1": "",
+        //"2": "",
+        //"3": "",
+        //"4": "",
+        //"5": "",
+        "urgent": "",
         //"active": "",
         //"default": ""
+       },
+       "persistent_workspaces": {
+	"1": [],
+	"2": [],
+	"3": [],
+	"4": [],
+	"5": [],
        }
     },
 
