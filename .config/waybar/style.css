@@ -48,8 +48,8 @@
 
 /* The whole bar */
 #waybar {
-    background: #323232;
-    color: white;
+    background: #000000;
+    color: #faf0da;
     font-family: Cantarell, Noto Sans, sans-serif;
     font-size: 13px;
 }
@@ -65,8 +65,8 @@
 #pulseaudio,
 #temperature,
 #tray {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 
@@ -99,7 +99,6 @@
 }
 
 #clock {
-    font-weight: bold;
 }
 
 #cpu {
